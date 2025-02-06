@@ -32,7 +32,7 @@ const errorMsg = function (msg) {
 
 // FETCH CITY DATA FROM API
 function weatherData(city) {
-  fetch(`http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}`)
+  fetch(`https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}`)
     .then((res) => res.json())
     .then((data) => {
       console.log(data);
